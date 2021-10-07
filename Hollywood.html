@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Hollywood</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    
+    <body>
+	<h1 id="highest" style="display: none">Congratulations, You are our highest scorer!!!</h1>
+	<p id="leaderboard"></p>
+	<div id="Major Class" style="display: block">
+	<div class="intro">
+		<h1>Welcome To Movie Name Guessing Game!</h1>
+
+	</div>
+	<div class="instructions">
+		<p>Here are some instructions:</p> 
+		<ul>
+			<li>You have to find the name of the Movie.</li>
+			<li>You have 9 chances.</li>
+			<li>In each chance guess a alphabet present in the movie</li>
+			<li>1 alphabet is already shown to you at its correct position.</li>
+		</ul>
+	</div>
+	<div id="permission" style="display: block">
+		Wanna play the game? Y/N <br>
+		<input name='y/n' type="text" id="ask">
+		<input type="button" value="Submit", onclick="initial_check()">
+		
+    </div>
+	<h3 id="user_name"></h3>
+	<div id="game" style="display: none;">
+		<h3>Lets Play!!</h3>
+		<input type="text" id="letter" >
+		<input type="button" value="Guess" onclick="Letter()">
+		<p id="answer"></p>
+		<p id="comment"></p>
+		<p id="counter"></p>
+    </div>	
+	<p id="score"></p>
+	<p id="quit"></p>
+	<p id="play_again"></p>
+	<p id="stat"></p>
+	<button id="Prev_scores" onclick="get_data()" style ="display: none;">Previous Scores</button>
+	<p id = "Over"></p>
+	
+	<div id = "reset" style="display: none;">
+	<button onclick="window.location.reload()" >Restart Game</button>
+	</div>
+	</div>
+	<script src="script.js"></script>
+    </body>
+</html>
